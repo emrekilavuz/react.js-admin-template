@@ -1,0 +1,16 @@
+<svg width="900" height="494" viewBox="0 0 919 494" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<text class="dash-anim-text" x="75" y="50" fill="rgb(50, 180, 75)" rotate="-2" font-family="Indie Flower" font-size="55px">Magic Data</text>
+<rect x="160" y="403" width="94" height="100" fill="#DD4A08"/>
+<rect x="721" y="55" width="94" height="443" fill="#2686A5"/>
+<rect x="574" y="32" width="94" height="466" fill="#31CE96"/>
+<rect x="426" y="100" width="94" height="398" fill="#D320A1"/>
+<path class="dash-anim-path" d="M101 437.5L153.5 311L262.5 237L366.5 181.5L469.5 211.5L537.5 98L619.5 22L705 10L844 63L951.5 22" stroke="#ff7777" stroke-width="5"/>
+<rect x="284" y="249" width="94" height="252" fill="#2686D5"/>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="919" height="494" fill="white"/>
+</clipPath>
+</defs>
+</svg>

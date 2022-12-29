@@ -1,5 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 3px 5px;
+  background-color: #fafafa;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +16,178 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mainPage {
+  padding-left: 14rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+nav.topNav {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(140, 170, 160, 0.85);
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+}
+
+nav.topNav .header_logo_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.headerUl {
+  flex: 5;
+}
+
+.headerUl ul {
+  display: flex;
+}
+
+.headerUl ul li{
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.headerButtonsContainer{
+  flex: 1;
+}
+
+nav.topNav .btn{
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background-color: rgba(50, 180, 100, 0.9);
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+aside.sidebar {
+  width: 13rem;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(130, 160, 150, 0.9);
+  color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 3px 5px 12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+aside.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5px;
+}
+
+aside.sidebar ul li {
+  margin: 1rem 3px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+}
+
+aside.sidebar ul li a{
+  color: #fafafa;
+}
+
+.sidebar_span {
+  margin-left: 7px;
+  color: #fafafa;
+}
+
+.sidebar_logo_container {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.sidebar_logo_container img{
+  border-radius: 10px;
+}
+
+.dash-anim-text {
+  animation: moveText 7s linear infinite;
+}
+
+.dash-anim-path {
+  animation: movePath 5s linear infinite;
+}
+
+.increaseHeightAnim {
+  animation: increaseHeightKeyframe 5s linear infinite;
+}
+
+.increaseHeightAnim2 {
+  animation-delay: 1s;
+}
+
+.increaseHeightAnim3 {
+  animation-delay: 2.5s;
+}
+
+@keyframes increaseHeightKeyframe{
+  0%{
+    width: 120px;
+  }
+  25%{
+    width: 155px;
+  }
+  50%{
+    width: 120px;
+  }
+  75%{
+    width: 80px;
+  }
+  100%{
+    width: 120px;
+  }
+}
+
+@keyframes movePath{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+@keyframes moveText {
+  0%{
+    transform: translate(0);
+  }
+
+  45%{
+    transform: translate(100px, 150px);
+  }
+
+  75%{
+    transform: translate(100px, 10px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
